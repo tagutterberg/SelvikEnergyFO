@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/site_icon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta Tags -->
+  <title>Selvík Energy | High-Seas Bunkering: North Atlantic, Barents, Svalbard</title>
+  <meta name="description"
+    content="Premier offshore and high-seas bunkering services in the North Atlantic, Faroe Islands, Barents Sea, and Svalbard zone. Reliable marine fuel supply with fewer idle days." />
+  <meta name="keywords"
+    content="bunkering, high-seas bunkering, off-shore bunkering, marine fuel, Barents Sea, Svalbard, Faroe Islands, North Atlantic, Selvík Energy" />
+  <meta name="author" content="Selvík Energy" />
+  <meta name="author" content="Selvík Energy" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Selvik Energy",
+        "url": "https://selvikenergy.fo",
+        "logo": "https://selvikenergy.fo/logo_yellow.svg",
+        "description": "Premier high-seas bunkering services in the North Atlantic.",
+        "areaServed": [
+          { "@type": "Place", "name": "North Atlantic" },
+          { "@type": "Place", "name": "Barents Sea" },
+          { "@type": "Place", "name": "Svalbard" },
+          { "@type": "Place", "name": "Faroe Islands" }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+298 210510",
+          "contactType": "sales",
+          "email": "sales@selvik.fo"
+        }
+      }
+    </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Netlify Form Detection -->
+  <form name="newsletter" netlify netlify-honeypot="bot-field" hidden>
+    <input type="email" name="email" />
+    <input name="bot-field" />
+  </form>
+</body>
+
+</html>

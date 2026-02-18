@@ -1,0 +1,83 @@
+{
+    "projectInfo": {
+        "name": "BunkerLanding",
+        "description": "Landing page for Selvík Energy (Bunkering at Sea).",
+        "type": "Single Page Application (SPA)",
+        "framework": "React + Vite"
+    },
+    "techStack": {
+        "core": [
+            "React",
+            "Vite"
+        ],
+        "styling": [
+            "Tailwind CSS",
+            "Framer Motion",
+            "Lucide React"
+        ],
+        "utilities": [
+            "ESLint",
+            "PostCSS"
+        ]
+    },
+    "architecture": {
+        "fileStructure": {
+            "root": "c:/Antigravity/BunkerLanding",
+            "src": {
+                "main": "main.jsx (Entry Point)",
+                "app": "App.jsx (Layout & Route Manager)",
+                "content": "website-content.js (Centralized Text/Data Source)",
+                "components": "Reusable UI bricks (Buttons, Text Effects, Widgets)",
+                "sections": "Page Sections (Hero, Services, Map, Footer)",
+                "utils": "Helper functions (timeUtils.js)"
+            }
+        },
+        "coreLogic": {
+            "timeBasedTheming": "App functionality changes based on time of day (Morning/Day/Night). handled in `utils/timeUtils.js` and `App.jsx`.",
+            "contentManagement": "All text content is decoupled from components and stored in `website-content.js`."
+        }
+    },
+    "uiDesign": {
+        "principles": [
+            "Glassmorphism (Backdrop blur overlays)",
+            "Motion-First (Entrance animations, scroll effects)",
+            "Dark Theme Default"
+        ],
+        "brandColors": {
+            "note": "Colors are defined in `src/index.css` using CSS variables and the `@theme` directive. Tailwind config does not override these.",
+            "tokens": {
+                "brand-dark": "#1e2b18 (Greenish Black)",
+                "brand-light": "#8bc357 (Vivid Green)",
+                "accent": "#cbd980 (Morning/Day Header Accent)",
+                "morning": "#ea580c (Orange - via tailwind classes)"
+            }
+        },
+        "typography": "Inter (Sans-serif)"
+    },
+    "navigation": [
+        {
+            "name": "Home",
+            "target": "#home"
+        },
+        {
+            "name": "Services",
+            "target": "#services"
+        },
+        {
+            "name": "Operations",
+            "target": "#map"
+        },
+        {
+            "name": "Compliance",
+            "target": "#compliance"
+        },
+        {
+            "name": "About",
+            "target": "#about"
+        },
+        {
+            "name": "Contact",
+            "target": "#contact"
+        }
+    ]
+}
